@@ -58,7 +58,7 @@
         @if (Route::has('login'))
           <div class="top-right links">
             @auth
-              <a href="{{ url('/home') }}">Home</a>
+              <a href="{{ url('/dashboard') }}">Dashboard</a>
             @else
               <a href="{{ route('login') }}">Login</a>
                 @if (Route::has('register'))
@@ -69,12 +69,12 @@
         @endif
         <div class="content">
           <div class="title m-b-md">
-              Laravel
+              login管理
           </div>
           <div class="links">
-            <a href="https://laracasts.com"><button class='btn btn-primary'>Laracasts</button></a>
-            <a href="https://blog.laravel.com"><button class='btn btn-info'>Blog</button></a>
-            <a href="https://forge.laravel.com"><button class='btn btn-danger'>Forge</button></a>
+            <a href=""><button class='btn btn-primary'>Laracasts</button></a>
+            <a href=""><button class='btn btn-info'>Blog</button></a>
+            <a href=""><button class='btn btn-danger'>Forge</button></a>
           </div>
         </div>
     </div>
