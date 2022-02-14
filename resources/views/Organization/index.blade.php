@@ -1,4 +1,4 @@
-<h1>organization管理ページ</h1>
+<h1>会社一覧、ラーメンは一蘭、学校は学ラン、</h1>
 
 <table>
   <thead>

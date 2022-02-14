@@ -9,7 +9,7 @@ class Organization extends Model {
     use HasFactory;
 
     // モデルに関連づけるテーブル
-    protected $table = 'organization';
+    protected $table = 'organizations';
 
     // テーブルに関連付けつる主キー
     protected $protected = 'id';
