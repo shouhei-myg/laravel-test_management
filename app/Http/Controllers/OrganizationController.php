@@ -7,14 +7,13 @@ use Illuminate\Http\Request;
 
 class OrganizationController extends Controller {
     public function __construct() {
-        $this->organization = new Organization();
+        $this->organizations = new Organization();
     }
 
     public function index() {
-        $organization = Organization::all();
-        var_dump(1234)
+        $organizations = Organization::all();
         return view('organization.index', [
-            'organizations' => $organization,
+            'organizations' => $organizations,
         ]);
     }
 }
