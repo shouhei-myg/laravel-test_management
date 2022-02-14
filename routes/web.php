@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OrganizationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,8 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/password', function () {
-    return view('password');
+Route::get('/index', function () {
+    return view('organization.index');
 });
 
 Route::get('/dashboard', function () {
