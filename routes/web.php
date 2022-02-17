@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/index', function () {
-//     return view('organization.index');
-// });
 
 Route::get('/', function () {
     return view('welcome');
@@ -29,4 +26,8 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 
-Route::get('/index', [OrganizationController::class, 'index']);
+Route::get('/index', [OrganizationController::class, 'index'])->name('organization.index');
+// 会社の登録画面表示
+Route::get('/create', [OrganizationController::class, 'create'])->name('organization.create');
+// 会社の登録処理
+Route::post('/store', [OrganizationController::class, 'store'])->name('organization.store');
