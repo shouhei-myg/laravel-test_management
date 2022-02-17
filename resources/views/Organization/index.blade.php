@@ -1,5 +1,5 @@
-<h1>会社一覧、ラーメンは一蘭、学校は学ラン、</h1>
-
+<h1>会社一覧</h1>
+<a href="{{ route('organization.create') }}">会社追加</a>
 <table>
   <thead>
     <tr>
