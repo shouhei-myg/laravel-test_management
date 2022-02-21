@@ -27,7 +27,15 @@ require __DIR__.'/auth.php';
 
 
 Route::get('/index', [OrganizationController::class, 'index'])->name('organization.index');
+
 // 会社の登録画面表示
 Route::get('/create', [OrganizationController::class, 'create'])->name('organization.create');
+
 // 会社の登録処理
+Route::post('/store', [OrganizationController::class, 'store'])->name('organization.store');
+
+// 会社詳細
+Route::post('/store', [OrganizationController::class, 'store'])->name('organization.store');
+
+// 会社編集
 Route::post('/store', [OrganizationController::class, 'store'])->name('organization.store');
