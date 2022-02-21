@@ -1,4 +1,4 @@
-<h1>会社一覧</h1>
+<h1>会社一覧</h1><hr>
 <a href="{{ route('organization.create') }}">会社追加</a>
 <table>
   <thead>
