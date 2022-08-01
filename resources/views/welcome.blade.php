@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
   <head>
@@ -69,10 +73,10 @@
         @endif
         <div class="content">
           <div class="title m-b-md">
-              login管理
+              うんこまん
           </div>
           <div class="links">
-            <a href=""><button class='btn btn-primary'>Laracasts</button></a>
+            <a href=""><button class='btn btn-primary'>半くそ</button></a>
             <a href=""><button class='btn btn-info'>Blog</button></a>
             <a href=""><button class='btn btn-danger'>Forge</button></a>
           </div>

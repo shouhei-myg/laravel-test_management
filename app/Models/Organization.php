@@ -35,4 +35,26 @@ class Organization extends Model {
             'name' => $request->name,
         ]);
     }
+
+    // 登録処理
+    public function Organization($request) {
+        // リクエストデータを基に管理マスターユーザーに登録する
+        return $this->create([
+            'name' => $request->name,
+        ]);
+    }
+
+    // 更新処理
+    public function updateOrganization($request, $organization) {
+        $result = $organization->fill([
+            'name' => $request->name,
+        ])->save();
+
+        return $result;
+    }
+
+    // 削除処理
+    public function deleteOrganizationById($id) {
+        return $this->destroy($id);
+    }
 }

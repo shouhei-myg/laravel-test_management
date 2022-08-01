@@ -35,7 +35,16 @@ Route::get('/create', [OrganizationController::class, 'create'])->name('organiza
 Route::post('/store', [OrganizationController::class, 'store'])->name('organization.store');
 
 // 会社詳細
-Route::post('/store', [OrganizationController::class, 'store'])->name('organization.store');
+Route::get('/show/{id}', [OrganizationController::class, 'show'])->name('organization.show');
 
-// 会社編集
-Route::post('/store', [OrganizationController::class, 'store'])->name('organization.store');
+// 会社の編集画面
+Route::get('/edit/{id}', [OrganizationController::class, 'edit'])->name('organization.edit');
+
+
+
+// 会社の更新処理
+Route::put('/update/{id}', [OrganizationController::class, 'update'])->name('organization.update');
+
+
+// 会社の削除
+Route::post('/destroy{id}', [OrganizationController::class, 'destroy'])->name('organization.destroy');
